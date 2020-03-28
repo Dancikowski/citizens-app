@@ -15,7 +15,7 @@ public class FileMakerTest {
 
     @Before
     public void setUp(){
-        path = "src/test/resources/citizens2.txt";
+        path = "src/test/resources/citizens.txt";
         fileMaker = new FileMaker(path);
     }
 
