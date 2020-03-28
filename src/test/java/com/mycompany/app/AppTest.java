@@ -12,9 +12,10 @@ import static org.junit.Assert.*;
 public class AppTest 
 {
     FileMaker fileMaker;
-    String path = "citizens2.txt";
+    String path;
     String correctPersonId = "04222685555";
     String invalidPersonId =  "04222685551";
+
     @Before
     public void setUp(){
         path = "src/test/resources/citizens2.txt";
@@ -31,12 +32,12 @@ public class AppTest
     @Test
     public void personIdShouldFail() {
         IdValidator idValidator = new IdValidator(invalidPersonId);
-        assertFalse( idValidator.validate() );
+        assertFalse(idValidator.validate());
     }
 
     @Test
     public void personIdShouldPass() {
         IdValidator idValidator = new IdValidator(correctPersonId);
-        assertTrue( idValidator.validate() );
+        assertTrue(idValidator.validate());
     }
 }
