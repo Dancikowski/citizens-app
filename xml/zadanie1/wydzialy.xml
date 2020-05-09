@@ -1,0 +1,97 @@
+<wydzialy  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="wydzialy.xsd">
+    <wydzial wydzial-id="wmi">
+        <nazwa>Wydzial Matematyki i Informatyki</nazwa>
+        <adresyuczelni>
+            <adres>Umultowska 1</adres>
+            <adres>Umultowska 2</adres>
+        </adresyuczelni>
+        <pracownicy>
+            <pracownik id="id-1">
+                <imie>Bartosz</imie>
+                <nazwisko>Mejwski</nazwisko>
+                <kategoria>adnministracyjny</kategoria>
+                <adresypracownika>
+                    <adrespracownika>
+                        <ulica>Rozana</ulica>
+                        <numer>123</numer>
+                        <kod>123-123</kod>
+                        <miejscowosc>Poznan</miejscowosc>
+                    </adrespracownika>
+                </adresypracownika>
+            </pracownik>
+            <pracownik id="id-3">
+                <imie>Damian</imie>
+                <nazwisko>Stanowski</nazwisko>
+                <kategoria>techniczny</kategoria>
+                <adresypracownika>
+                    <adrespracownika>
+                        <ulica>Wrocławska</ulica>
+                        <numer>123</numer>
+                        <kod>213-123</kod>
+                        <miejscowosc>Warszawa</miejscowosc>
+                    </adrespracownika>
+                </adresypracownika>
+            </pracownik>
+        </pracownicy>
+        <przedmioty>
+            <przedmiot przedmiot-id="mat-1">
+                <nazwa>Matematyka dyskretna</nazwa>
+                <opis>To jest opis przedmiotu Matematyka dyskretna</opis>
+                <prowadzacy>
+                    <pojedynczyprowadzacy idref="id-1" />
+                    <pojedynczyprowadzacy idref="id-3" />
+                </prowadzacy>
+                <iloscuczniow>123</iloscuczniow>
+            </przedmiot>
+            <przedmiot przedmiot-id="mat-2">
+                <nazwa>Java</nazwa>
+                <opis>To jest opis przedmiotu Java</opis>
+                <prowadzacy>
+                    <pojedynczyprowadzacy idref="id-1" />
+                </prowadzacy>
+                <iloscuczniow>123</iloscuczniow>
+            </przedmiot>
+        </przedmioty>
+    </wydzial>
+    <wydzial wydzial-id="wnpid">
+        <nazwa>Wydzial Nauk Politycznych i Dziennikarstwa</nazwa>
+        <adresyuczelni>
+            <adres>Różana 21</adres>
+            <adres>Umultowska 123</adres>
+        </adresyuczelni>
+        <pracownicy>
+            <pracownik id="pd-1">
+                <imie>Damian</imie>
+                <nazwisko>Szkolnikowski</nazwisko>
+                <kategoria>naukowy</kategoria>
+                <adresypracownika>
+                    <adrespracownika>
+                        <ulica>Murawa</ulica>
+                        <numer>12</numer>
+                        <kod>21-12</kod>
+                        <miejscowosc>Kraków</miejscowosc>
+                    </adrespracownika>
+                </adresypracownika>
+            </pracownik>
+        </pracownicy>
+        <przedmioty>
+            <przedmiot przedmiot-id="pol-1">
+                <nazwa>Prawo</nazwa>
+                <opis>To jest opis przedmotu prawo</opis>
+                <prowadzacy>
+                    <pojedynczyprowadzacy idref="pd-1" />
+                </prowadzacy>
+                <iloscuczniow>123</iloscuczniow>
+            </przedmiot>
+            <przedmiot przedmiot-id="pol-2">
+                <nazwa>Język Angielski</nazwa>
+                <opis>Opis przedmiotu Język Angielski</opis>
+                <prowadzacy>
+                    <pojedynczyprowadzacy idref="pd-1" />
+                </prowadzacy>
+                <iloscuczniow>123</iloscuczniow>
+            </przedmiot>
+        </przedmioty>
+    </wydzial>
+</wydzialy>
